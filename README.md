@@ -1,7 +1,7 @@
 # Python3 + PyQt5 + Scrcpy
 
 ### windows包
-  - 链接：https://pan.xunlei.com/s/VNyM3crMQTZej6_5gwMRiXeIA1?pwd=r7s3# 提取码：r7s3
+  - 链接：https://pan.xunlei.com/s/VNyPUtVI5CkMr0Lj7ae8v9EfA1?pwd=uybv# 提取码：uybv
 
 ### Scrcpy
   - https://github.com/Genymobile/scrcpy   根据自己的系统选择 配置环境变量即可
