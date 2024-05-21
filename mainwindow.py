@@ -513,7 +513,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
 
     def close_adb(self):
         cmd = 'taskkill /f /im adb.exe'
-        run_cmd(cmd)
+        subprocess.run(cmd)
 
     def get_product(self):
         product = self.comboBox.currentText()
@@ -601,8 +601,9 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
     def quit(self):
         ReadConfig().set_history(self.history)
         ReadConfig().set_phone(str(list(self.queue_phone)))
-        # self.close_adb()
         self.close_pidd()
+        if platform == 'Windows':
+            self.close_adb()
         QApplication.quit()
 
     def init_lineedit(self):
